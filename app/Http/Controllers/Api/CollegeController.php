@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\College;
 use Illuminate\Http\Request;
+use App\Http\Requests\CollegeRequest;
+use App\Http\Resources\CollegeResource;
 
 class CollegeController extends Controller
 {
