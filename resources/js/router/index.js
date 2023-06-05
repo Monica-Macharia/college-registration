@@ -1,17 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
-import CollegeIndex from '../components/colleges/CollegeIndex.vue';
+import CollegesIndex from '../components/colleges/CollegesIndex.vue';
 
 const routes = [
     {
         path: '/dashboard',
-        name: 'dashboard',
-        component: CollegeIndex,
+        name: 'colleges.index',
+        component: CollegesIndex
     }
 ];
 
-const router = createRouter({
+export default createRouter({
     history: createWebHistory(),
     routes
 });
 
-export default router;

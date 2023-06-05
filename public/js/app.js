@@ -24861,10 +24861,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CollegeIndex.vue?vue&type=template&id=fb4c6a5a":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CollegeIndex.vue?vue&type=template&id=fb4c6a5a ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CollegesIndex.vue?vue&type=template&id=2c739bce":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CollegesIndex.vue?vue&type=template&id=2c739bce ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24872,8 +24872,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   render: () => (/* binding */ render)
 /* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" ggggggggggggggggggggg ");
 function render(_ctx, _cache) {
-  return " HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ";
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Other components or HTML content "), _hoisted_1]);
 }
 
 /***/ }),
@@ -24886,24 +24889,19 @@ function render(_ctx, _cache) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_bootstrap__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./router */ "./resources/js/router/index.js");
-/* harmony import */ var _components_colleges_CollegeIndex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/colleges/CollegeIndex */ "./resources/js/components/colleges/CollegeIndex.vue");
-
-
-window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_1__["default"];
-alpinejs__WEBPACK_IMPORTED_MODULE_1__["default"].start();
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./router */ "./resources/js/router/index.js");
+/* harmony import */ var _components_colleges_CollegesIndex__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/colleges/CollegesIndex */ "./resources/js/components/colleges/CollegesIndex.vue");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
 
 
 
-(0,vue__WEBPACK_IMPORTED_MODULE_2__.createApp)(rootComponent, {
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
   components: {
-    CollegeIndex: _components_colleges_CollegeIndex__WEBPACK_IMPORTED_MODULE_4__["default"]
+    CollegesIndex: _components_colleges_CollegesIndex__WEBPACK_IMPORTED_MODULE_2__["default"]
   }
-}).use(_router__WEBPACK_IMPORTED_MODULE_3__["default"]).mount(rootContainer, '#app');
+}).use(_router__WEBPACK_IMPORTED_MODULE_1__["default"]).mount('#app');
 
 /***/ }),
 
@@ -24955,19 +24953,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
-/* harmony import */ var _components_colleges_CollegeIndex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/colleges/CollegeIndex */ "./resources/js/components/colleges/CollegeIndex.vue");
+/* harmony import */ var _components_colleges_CollegesIndex_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/colleges/CollegesIndex.vue */ "./resources/js/components/colleges/CollegesIndex.vue");
 
 
 var routes = [{
   path: '/dashboard',
-  name: 'college.index',
-  component: _components_colleges_CollegeIndex__WEBPACK_IMPORTED_MODULE_0__["default"]
+  name: 'colleges.index',
+  component: _components_colleges_CollegesIndex_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
 }];
-var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createRouter)({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createRouter)({
   history: (0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createWebHistory)(),
   routes: routes
-});
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);
+}));
 
 /***/ }),
 
@@ -42402,20 +42399,19 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 // runtime helper for setting properties on components
 // in a tree-shakable way
 exports["default"] = (sfc, props) => {
-    const target = sfc.__vccOpts || sfc;
     for (const [key, val] of props) {
-        target[key] = val;
+        sfc[key] = val;
     }
-    return target;
+    return sfc;
 };
 
 
 /***/ }),
 
-/***/ "./resources/js/components/colleges/CollegeIndex.vue":
-/*!***********************************************************!*\
-  !*** ./resources/js/components/colleges/CollegeIndex.vue ***!
-  \***********************************************************/
+/***/ "./resources/js/components/colleges/CollegesIndex.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/components/colleges/CollegesIndex.vue ***!
+  \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -42423,13 +42419,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _CollegeIndex_vue_vue_type_template_id_fb4c6a5a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CollegeIndex.vue?vue&type=template&id=fb4c6a5a */ "./resources/js/components/colleges/CollegeIndex.vue?vue&type=template&id=fb4c6a5a");
+/* harmony import */ var _CollegesIndex_vue_vue_type_template_id_2c739bce__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CollegesIndex.vue?vue&type=template&id=2c739bce */ "./resources/js/components/colleges/CollegesIndex.vue?vue&type=template&id=2c739bce");
 /* harmony import */ var _home_macharia_Development_Code_php_laravel_college_register_college_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_macharia_Development_Code_php_laravel_college_register_college_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_CollegeIndex_vue_vue_type_template_id_fb4c6a5a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/colleges/CollegeIndex.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_macharia_Development_Code_php_laravel_college_register_college_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_CollegesIndex_vue_vue_type_template_id_2c739bce__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/colleges/CollegesIndex.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -42438,18 +42434,18 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./resources/js/components/colleges/CollegeIndex.vue?vue&type=template&id=fb4c6a5a":
-/*!*****************************************************************************************!*\
-  !*** ./resources/js/components/colleges/CollegeIndex.vue?vue&type=template&id=fb4c6a5a ***!
-  \*****************************************************************************************/
+/***/ "./resources/js/components/colleges/CollegesIndex.vue?vue&type=template&id=2c739bce":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/components/colleges/CollegesIndex.vue?vue&type=template&id=2c739bce ***!
+  \******************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CollegeIndex_vue_vue_type_template_id_fb4c6a5a__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CollegesIndex_vue_vue_type_template_id_2c739bce__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CollegeIndex_vue_vue_type_template_id_fb4c6a5a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CollegeIndex.vue?vue&type=template&id=fb4c6a5a */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CollegeIndex.vue?vue&type=template&id=fb4c6a5a");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CollegesIndex_vue_vue_type_template_id_2c739bce__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CollegesIndex.vue?vue&type=template&id=2c739bce */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CollegesIndex.vue?vue&type=template&id=2c739bce");
 
 
 /***/ }),
@@ -42489,8 +42485,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var _vue_devtools_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @vue/devtools-api */ "./node_modules/@vue/devtools-api/lib/esm/index.js");
 /*!
-  * vue-router v4.0.13
-  * (c) 2022 Eduardo San Martin Morote
+  * vue-router v4.0.11
+  * (c) 2021 Eduardo San Martin Morote
   * @license MIT
   */
 
@@ -43014,7 +43010,7 @@ function useHistoryStateNavigation(base) {
          * if a base tag is provided and we are on a normal domain, we have to
          * respect the provided `base` attribute because pushState() will use it and
          * potentially erase anything before the `#` like at
-         * https://github.com/vuejs/router/issues/685 where a base of
+         * https://github.com/vuejs/vue-router-next/issues/685 where a base of
          * `/folder/#` but a base of `/` would erase the `/folder/` section. If
          * there is no host, the `<base>` tag makes no sense and if there isn't a
          * base tag we can just use everything after the `#`.
@@ -43053,7 +43049,7 @@ function useHistoryStateNavigation(base) {
         const currentState = assign({}, 
         // use current history state to gracefully handle a wrong call to
         // history.replaceState
-        // https://github.com/vuejs/router/issues/366
+        // https://github.com/vuejs/vue-router-next/issues/366
         historyState.value, history.state, {
             forward: to,
             scroll: computeScrollPosition(),
@@ -43118,7 +43114,6 @@ function createMemoryHistory(base = '') {
     let listeners = [];
     let queue = [START];
     let position = 0;
-    base = normalizeBase(base);
     function setLocation(location) {
         position++;
         if (position === queue.length) {
@@ -43874,13 +43869,12 @@ function createRouterMatcher(routes, globalOptions) {
     }
     function insertMatcher(matcher) {
         let i = 0;
+        // console.log('i is', { i })
         while (i < matchers.length &&
-            comparePathParserScore(matcher, matchers[i]) >= 0 &&
-            // Adding children with empty path should still appear before the parent
-            // https://github.com/vuejs/router/issues/1124
-            (matcher.record.path !== matchers[i].record.path ||
-                !isRecordChildOf(matcher, matchers[i])))
+            comparePathParserScore(matcher, matchers[i]) >= 0)
             i++;
+        // console.log('END i is', { i })
+        // while (i < matchers.length && matcher.score <= matchers[i].score) i++
         matchers.splice(i, 0, matcher);
         // only add the original record to the name map
         if (matcher.record.name && !isAliasRecord(matcher))
@@ -43912,7 +43906,7 @@ function createRouterMatcher(routes, globalOptions) {
             // this also allows the user to control the encoding
             path = location.path;
             if (( true) && !path.startsWith('/')) {
-                warn(`The Matcher cannot resolve relative paths but received "${path}". Unless you directly called \`matcher.resolve("${path}")\`, this is probably a bug in vue-router. Please open an issue at https://new-issue.vuejs.org/?repo=vuejs/router.`);
+                warn(`The Matcher cannot resolve relative paths but received "${path}". Unless you directly called \`matcher.resolve("${path}")\`, this is probably a bug in vue-router. Please open an issue at https://new-issue.vuejs.org/?repo=vuejs/vue-router-next.`);
             }
             matcher = matchers.find(m => m.re.test(path));
             // matcher should have a value after the loop
@@ -44065,9 +44059,6 @@ function checkMissingParamsInAbsolutePath(record, parent) {
         if (!record.keys.find(isSameParam.bind(null, key)))
             return warn(`Absolute path "${record.record.path}" should have the exact same param named "${key.name}" as its parent "${parent.record.path}".`);
     }
-}
-function isRecordChildOf(record, parent) {
-    return parent.children.some(child => child === record || isRecordChildOf(record, child));
 }
 
 /**
@@ -44356,7 +44347,7 @@ function onBeforeRouteLeave(leaveGuard) {
     {}).value;
     if (!activeRecord) {
         ( true) &&
-            warn('No active route record was found when calling `onBeforeRouteLeave()`. Make sure you call this function inside of a component child of <router-view>. Maybe you called it inside of App.vue?');
+            warn('No active route record was found. Are you missing a <router-view> component?');
         return;
     }
     registerGuard(activeRecord, 'leaveGuards', leaveGuard);
@@ -44378,7 +44369,7 @@ function onBeforeRouteUpdate(updateGuard) {
     {}).value;
     if (!activeRecord) {
         ( true) &&
-            warn('No active route record was found when calling `onBeforeRouteUpdate()`. Make sure you call this function inside of a component child of <router-view>. Maybe you called it inside of App.vue?');
+            warn('No active route record was found. Are you missing a <router-view> component?');
         return;
     }
     registerGuard(activeRecord, 'updateGuards', updateGuard);
@@ -44801,24 +44792,6 @@ const RouterViewImpl = /*#__PURE__*/ (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineC
                 onVnodeUnmounted,
                 ref: viewRef,
             }));
-            if (( true) &&
-                isBrowser &&
-                component.ref) {
-                // TODO: can display if it's an alias, its props
-                const info = {
-                    depth,
-                    name: matchedRoute.name,
-                    path: matchedRoute.path,
-                    meta: matchedRoute.meta,
-                };
-                const internalInstances = Array.isArray(component.ref)
-                    ? component.ref.map(r => r.i)
-                    : [component.ref.i];
-                internalInstances.forEach(instance => {
-                    // @ts-expect-error
-                    instance.__vrv_devtools = info;
-                });
-            }
             return (
             // pass the vnode to the slot as a prop.
             // h and <component :is="..."> both accept vnodes
@@ -44893,8 +44866,8 @@ function addDevtools(app, router, matcher) {
         id: 'org.vuejs.router' + (id ? '.' + id : ''),
         label: 'Vue Router',
         packageName: 'vue-router',
-        homepage: 'https://router.vuejs.org',
-        logo: 'https://router.vuejs.org/logo.png',
+        homepage: 'https://next.router.vuejs.org/',
+        logo: 'https://vuejs.org/images/icons/favicon-96x96.png',
         componentStateTypes: ['Routing'],
         app,
     }, api => {
@@ -44909,17 +44882,8 @@ function addDevtools(app, router, matcher) {
                 });
             }
         });
-        // mark router-link as active and display tags on router views
+        // mark router-link as active
         api.on.visitComponentTree(({ treeNode: node, componentInstance }) => {
-            if (componentInstance.__vrv_devtools) {
-                const info = componentInstance.__vrv_devtools;
-                node.tags.push({
-                    label: (info.name ? `${info.name.toString()}: ` : '') + info.path,
-                    textColor: 0,
-                    tooltip: 'This component is rendered by &lt;router-view&gt;',
-                    backgroundColor: PINK_500,
-                });
-            }
             // if multiple useLink are used
             if (Array.isArray(componentInstance.__vrl_devtools)) {
                 componentInstance.__devtoolsApi = api;
@@ -45366,11 +45330,8 @@ function createRouter(options) {
             if (( true) &&
                 'params' in rawLocation &&
                 !('name' in rawLocation) &&
-                // @ts-expect-error: the type is never
                 Object.keys(rawLocation.params).length) {
-                warn(`Path "${
-                // @ts-expect-error: the type is never
-                rawLocation.path}" was passed with params but they will be ignored. Use a named route alongside params instead.`);
+                warn(`Path "${rawLocation.path}" was passed with params but they will be ignored. Use a named route alongside params instead.`);
             }
             matcherLocation = assign({}, rawLocation, {
                 path: parseURL(parseQuery$1, rawLocation.path, currentLocation.path).path,
@@ -45423,7 +45384,7 @@ function createRouter(options) {
             // nested objects, so we keep the query as is, meaning it can contain
             // numbers at `$route.query`, but at the point, the user will have to
             // use their own type anyway.
-            // https://github.com/vuejs/router/issues/328#issuecomment-649481567
+            // https://github.com/vuejs/vue-router-next/issues/328#issuecomment-649481567
             stringifyQuery$1 === stringifyQuery
                 ? normalizeQuery(rawLocation.query)
                 : (rawLocation.query || {}),
@@ -45512,10 +45473,7 @@ function createRouter(options) {
         }
         return (failure ? Promise.resolve(failure) : navigate(toLocation, from))
             .catch((error) => isNavigationFailure(error)
-            ? // navigation redirects still mark the router as ready
-                isNavigationFailure(error, 2 /* NAVIGATION_GUARD_REDIRECT */)
-                    ? error
-                    : markAsReady(error) // also returns the error
+            ? error
             : // reject any unknown error
                 triggerError(error, toLocation, from))
             .then((failure) => {
@@ -45793,17 +45751,20 @@ function createRouter(options) {
             readyHandlers.add([resolve, reject]);
         });
     }
+    /**
+     * Mark the router as ready, resolving the promised returned by isReady(). Can
+     * only be called once, otherwise does nothing.
+     * @param err - optional error
+     */
     function markAsReady(err) {
-        if (!ready) {
-            // still not ready if an error happened
-            ready = !err;
-            setupListeners();
-            readyHandlers
-                .list()
-                .forEach(([resolve, reject]) => (err ? reject(err) : resolve()));
-            readyHandlers.reset();
-        }
-        return err;
+        if (ready)
+            return;
+        ready = true;
+        setupListeners();
+        readyHandlers
+            .list()
+            .forEach(([resolve, reject]) => (err ? reject(err) : resolve()));
+        readyHandlers.reset();
     }
     // Scroll behavior
     function handleScroll(to, from, isPush, isFirstNavigation) {
@@ -46916,18 +46877,6 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
 /******/ 		};
 /******/ 	})();
 /******/ 	
