@@ -1,7 +1,11 @@
-import './bootstrap';
+import { createApp } from "vue";
+import router from "./router";
+import CollegeIndex from "./components/colleges/CollegeIndex";
 
-import Alpine from 'alpinejs';
-
-window.Alpine = Alpine;
-
-Alpine.start();
+createApp({
+  components: {
+    CollegeIndex,
+  },
+})
+  .use(router)
+  .mount("#app");
