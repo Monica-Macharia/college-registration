@@ -12,7 +12,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <script src="{{ asset('path/to/bootstrap.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.js') }}" defer></script>
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>

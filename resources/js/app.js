@@ -1,6 +1,7 @@
 
 require('./bootstrap');
 
+
 require('alpinejs');
 
 import { createApp } from "vue";
