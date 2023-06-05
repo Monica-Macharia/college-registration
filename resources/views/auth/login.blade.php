@@ -1,3 +1,4 @@
+
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
@@ -12,7 +13,7 @@
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-        <form method="POST" action="{{ route('login') }}">
+        <form class="form-group" method="POST" action="{{ route('login') }}">
             @csrf
 
             <!-- Email Address -->
@@ -31,6 +32,14 @@
                                 name="password"
                                 required autocomplete="current-password" />
             </div>
+
+
+
+
+            
+
+
+
 
             <!-- Remember Me -->
             <div class="block mt-4">
@@ -52,5 +61,8 @@
                 </x-button>
             </div>
         </form>
+
+
+        
     </x-auth-card>
 </x-guest-layout>
