@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import CollegesIndex from '../components/colleges/CollegesIndex.vue';
+import CoursesIndex from '../components/colleges/CoursesIndex.vue';
 
 const routes = [
     {
         path: '/dashboard',
         name: 'colleges.index',
-        component: CollegesIndex
+        component: CoursesIndex
     }
 ];
 

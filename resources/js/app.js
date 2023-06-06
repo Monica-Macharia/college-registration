@@ -6,10 +6,11 @@ require('alpinejs');
 
 import { createApp } from "vue";
 import router from './router'
-import CollegesIndex from "./components/colleges/CollegesIndex";
+import CoursesIndex from "./components/colleges/CoursesIndex";
 
 createApp({
     components: {
-        CollegesIndex
+        CoursesIndex,
+        
     }
 }).use(router).mount('#app')
