@@ -24982,6 +24982,23 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CoursesEdit.vue?vue&type=template&id=2456433a":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CoursesEdit.vue?vue&type=template&id=2456433a ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+function render(_ctx, _cache) {
+  return " oooooo ";
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CoursesIndex.vue?vue&type=template&id=afac445c":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CoursesIndex.vue?vue&type=template&id=afac445c ***!
@@ -25130,14 +25147,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./router */ "./resources/js/router/index.js");
 /* harmony import */ var _components_colleges_CoursesIndex__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/colleges/CoursesIndex */ "./resources/js/components/colleges/CoursesIndex.vue");
+/* harmony import */ var _components_colleges_CoursesEdit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/colleges/CoursesEdit */ "./resources/js/components/colleges/CoursesEdit.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
 
 
 
+
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
   components: {
-    CoursesIndex: _components_colleges_CoursesIndex__WEBPACK_IMPORTED_MODULE_2__["default"]
+    CoursesIndex: _components_colleges_CoursesIndex__WEBPACK_IMPORTED_MODULE_2__["default"],
+    CoursesEdit: _components_colleges_CoursesEdit__WEBPACK_IMPORTED_MODULE_3__["default"]
   }
 }).use(_router__WEBPACK_IMPORTED_MODULE_1__["default"]).mount('#app');
 
@@ -25243,17 +25263,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 /* harmony import */ var _components_colleges_CoursesIndex_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/colleges/CoursesIndex.vue */ "./resources/js/components/colleges/CoursesIndex.vue");
+/* harmony import */ var _components_colleges_CoursesEdit_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/colleges/CoursesEdit.vue */ "./resources/js/components/colleges/CoursesEdit.vue");
+
 
 
 var routes = [{
   path: '/dashboard',
   name: 'colleges.index',
   component: _components_colleges_CoursesIndex_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+}, {
+  path: '/dashboard/main',
+  name: 'colleges.edit',
+  component: _components_colleges_CoursesEdit_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
 }];
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createRouter)({
-  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createWebHistory)(),
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue_router__WEBPACK_IMPORTED_MODULE_2__.createRouter)({
+  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_2__.createWebHistory)(),
   routes: routes
 }));
 
@@ -42699,6 +42725,32 @@ exports["default"] = (sfc, props) => {
 
 /***/ }),
 
+/***/ "./resources/js/components/colleges/CoursesEdit.vue":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/colleges/CoursesEdit.vue ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CoursesEdit_vue_vue_type_template_id_2456433a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CoursesEdit.vue?vue&type=template&id=2456433a */ "./resources/js/components/colleges/CoursesEdit.vue?vue&type=template&id=2456433a");
+/* harmony import */ var _home_macharia_Development_Code_php_laravel_college_register_college_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+const script = {}
+
+;
+const __exports__ = /*#__PURE__*/(0,_home_macharia_Development_Code_php_laravel_college_register_college_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_CoursesEdit_vue_vue_type_template_id_2456433a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/colleges/CoursesEdit.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/components/colleges/CoursesIndex.vue":
 /*!***********************************************************!*\
   !*** ./resources/js/components/colleges/CoursesIndex.vue ***!
@@ -42740,6 +42792,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CoursesIndex_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CoursesIndex.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CoursesIndex.vue?vue&type=script&lang=js");
  
+
+/***/ }),
+
+/***/ "./resources/js/components/colleges/CoursesEdit.vue?vue&type=template&id=2456433a":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/colleges/CoursesEdit.vue?vue&type=template&id=2456433a ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CoursesEdit_vue_vue_type_template_id_2456433a__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CoursesEdit_vue_vue_type_template_id_2456433a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CoursesEdit.vue?vue&type=template&id=2456433a */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/colleges/CoursesEdit.vue?vue&type=template&id=2456433a");
+
 
 /***/ }),
 

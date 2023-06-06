@@ -17,10 +17,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/dashboard', function () {
     return view('dashboard');
+
+   
     
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/dashboard/main', function () {
+    return view('main');
+})->name('dashboard/main');
 
 require __DIR__.'/auth.php';
 
