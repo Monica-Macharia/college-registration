@@ -7,6 +7,7 @@ const routes = [
         name: 'colleges.index',
         component: CoursesIndex
     }
+    
 ];
 
 export default createRouter({

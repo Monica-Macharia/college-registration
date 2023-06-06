@@ -11,6 +11,7 @@ import CoursesIndex from "./components/colleges/CoursesIndex";
 createApp({
     components: {
         CoursesIndex,
+      
         
     }
 }).use(router).mount('#app')
