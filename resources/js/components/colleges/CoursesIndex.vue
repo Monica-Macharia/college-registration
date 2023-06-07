@@ -17,6 +17,7 @@ import axios from "axios";
             
     })
      
+    
       
      
 
@@ -55,9 +56,8 @@ import axios from "axios";
         //.data => object return but the get request
         
     }
-        onMounted(getCourses);
-      
-     
+       
+    onMounted(getCourses);
       return{
         colleges,
         saveColleges,
