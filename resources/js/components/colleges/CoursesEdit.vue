@@ -17,45 +17,48 @@ import axios from "axios";
             
     })
      
-      
+          const storeColleges = (data) => {
+        axios.post('http://localhost:8000/api/colleges', data)
+          .then(response => {
+            const addedCourse = response.data;
+            colleges.value.push(addedCourse);
+          })
+          .catch(error => {
+            console.error(error);
+          });
+      };
+      storeColleges(colleges);
      
 
-      const storeColleges = async (data) => {
-        try{
-          await axios.post('http://127.0.0.1:8000/api/colleges', data)
-          console.log(data)    
-        }
-        catch (error) {
-          if (error.response) {
-            console.error('Error response:', error.response.data);
-          } else {
-            console.error('Error posting data:', error);
-          }
-        }
-        }
+      // const storeColleges = async (data) => {
+      //   try{
+      //     await axios.post('http://127.0.0.1:8000/api/colleges', data)
+      //     console.log(data)    
+      //   }
+      //   catch (error) {
+      //     if (error.response) {
+      //       console.error('Error response:', error.response.data);
+      //     } else {
+      //       console.error('Error posting data:', error);
+      //     }
+      //   }
+      //   }
         
         
-        const saveColleges = async () => {
+      //   const saveColleges = async () => {
           
-            const newData = {...form};
+      //       const newData = {...form};
             
-            colleges.value.push(newData);
+      //       colleges.value.push(newData);
             
-            await storeColleges(colleges);
+      //       await storeColleges(colleges);
            
-        }
+      //   }
         
-        saveColleges();
+      //   saveColleges();
 
-        const getCourses = async () => {
-        let response = await axios.get('http://127.0.0.1:8000/api/colleges')
-        colleges.value = response.data.data
-        
-        
-        //.data => object return but the get request
-        
-    }
-        onMounted(getCourses);
+            console.log(colleges)
+       
 
         //pushing data to form upon select button click
         const selectedCourse= (course) =>{
@@ -72,17 +75,37 @@ import axios from "axios";
         };
 
         //delete course
-        const deleteCourse = async (id) =>{
-            await axios.delete(`http://127.0.0.1:8000/api/colleges/${id}`)
-        }
-        const destroyCourse = async (id)=>{
-          await deleteCourse(id);
+        // const deleteCourse = async (id) =>{
+        //     await axios.delete(`http://127.0.0.1:8000/api/colleges/${id}`)
+        // }
+        // const destroyCourse = async (id)=>{
+        //   await deleteCourse(id);
           
-        }
+        // }
+
+    const deleteCourse = (id) => {
+    axios.delete(`http://localhost:8000/api/colleges/${id}`)
+    .then(response => {
+      const item = colleges.value.findIndex(course => course.id === id);
+      if (item !== -1) {
+        colleges.value.splice(item, 1);
+      }
+    });
+};
+
+    const getCourses = () => {
+            axios.get('http://127.0.0.1:8000/api/colleges')
+              .then(response => {
+                
+                colleges.value = colleges.value.concat(response.data.data);
+              });
+          };
+          
+        onMounted(getCourses);
      
       return{
         colleges,
-        saveColleges,
+        storeColleges,
         form,
         selectedCourse,
         cancelCourse,
