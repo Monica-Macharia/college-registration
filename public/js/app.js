@@ -25082,7 +25082,7 @@ var _hoisted_2 = {
 };
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "for": "name",
-  "class": "block text-sm font-medium text-gray-700"
+  "class": "hidden text-sm font-medium text-gray-700"
 }, "Id", -1 /* HOISTED */);
 var _hoisted_4 = {
   "class": "mt-1"
@@ -25168,7 +25168,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     name: "id",
     id: "id",
     placeholder: "Enter Course Id",
-    "class": "block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
+    "class": "hidden mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return $setup.form.id = $event;
     })
