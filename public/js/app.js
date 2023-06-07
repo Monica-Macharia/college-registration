@@ -24978,7 +24978,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
               editCourse(form);
-            case 1:
+              getCourses();
+              window.location.reload();
+            case 3:
             case "end":
               return _context3.stop();
           }

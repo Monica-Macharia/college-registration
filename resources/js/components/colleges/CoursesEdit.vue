@@ -69,8 +69,10 @@ const editCourse = async (form) => {
 
         const index = colleges.value.findIndex((course) => course.id === updatedCourse.id);
 
+
         if (index !== -1) {
           colleges.value.splice(index, 1, updatedCourse);
+          
         }
       } catch (error) {
         console.error(error);
@@ -81,6 +83,9 @@ const editCourse = async (form) => {
         const handleEdit = async () => {
           
         editCourse(form);
+        getCourses();
+        window.location.reload();
+       
       };
 
    
