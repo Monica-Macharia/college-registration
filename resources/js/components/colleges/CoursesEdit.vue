@@ -154,19 +154,20 @@ const editCourse = async (form) => {
             Edit
         </button>
       
-            <div class="mr-2 inline-flex justify-around  px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
+            <div class="mr-2 inline-flex justify-around  px-4 py-2 text-sm leading-5 text-gray-900 whitespace-no-wrap">
             
     
         <button type="submit" @click="deleteCourse(form.id)"
-                class="inline-flex items-center  px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase bg-gray-800 rounded-md border border-transparent ring-gray-300 transition duration-150 ease-in-out hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring disabled:opacity-25">
+                class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase bg-gray-800 rounded-md border border-transparent ring-gray-300 transition duration-150 ease-in-out hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring disabled:opacity-25">
             Remove
         </button>
+        </div>
         <div class="mr-2 inline-flex justify-around  px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
         <button type="submit" @click="cancelCourse"
                 class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase bg-gray-800 rounded-md border border-transparent ring-gray-300 transition duration-150 ease-in-out hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring disabled:opacity-25">
             Cancel
         </button>
-      </div>
+      
       </div>
     </div>
        
