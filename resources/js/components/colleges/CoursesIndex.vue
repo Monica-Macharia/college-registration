@@ -17,8 +17,7 @@ import axios from "axios";
             
     })
      
-    
-      
+          
     const storeColleges = (data) => {
         axios.post('http://localhost:8000/api/colleges', data)
           .then(response => {

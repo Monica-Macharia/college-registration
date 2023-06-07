@@ -17,51 +17,20 @@ import axios from "axios";
             
     })
      
-          const storeColleges = (data) => {
-        axios.post('http://localhost:8000/api/colleges', data)
-          .then(response => {
-            const addedCourse = response.data;
-            colleges.value.push(addedCourse);
-          })
-          .catch(error => {
-            console.error(error);
-          });
-      };
-      storeColleges(colleges);
-     
+    const getCourses = () => {
+            axios.get('http://127.0.0.1:8000/api/colleges')
+              .then(response => {
+                
+                colleges.value = colleges.value.concat(response.data.data);
+              });
+          };
 
-      // const storeColleges = async (data) => {
-      //   try{
-      //     await axios.post('http://127.0.0.1:8000/api/colleges', data)
-      //     console.log(data)    
-      //   }
-      //   catch (error) {
-      //     if (error.response) {
-      //       console.error('Error response:', error.response.data);
-      //     } else {
-      //       console.error('Error posting data:', error);
-      //     }
-      //   }
-      //   }
-        
-        
-      //   const saveColleges = async () => {
-          
-      //       const newData = {...form};
-            
-      //       colleges.value.push(newData);
-            
-      //       await storeColleges(colleges);
-           
-      //   }
-        
-      //   saveColleges();
-
-            console.log(colleges)
+         
        
 
         //pushing data to form upon select button click
         const selectedCourse= (course) =>{
+            form.id = course.id;
             form.name = course.name;
             form.tutor_name = course.tutor_name;
             form.hours_total = course.hours_total;
@@ -83,29 +52,37 @@ import axios from "axios";
           
         // }
 
-    const deleteCourse = (id) => {
-    axios.delete(`http://localhost:8000/api/colleges/${id}`)
+//     const deleteCourse = (id) => {
+//     axios.delete(`http://localhost:8000/api/colleges/${id}`)
+//     .then(response => {
+//       const item = colleges.value.findIndex(course => course.id === id);
+//       if (item !== -1) {
+//         colleges.value.splice(item, 1);
+//       }
+//     });
+// };
+
+
+    const deleteCourse = async (id) => {
+      axios.delete(`http://localhost:8000/api/colleges/${id}`)
     .then(response => {
-      const item = colleges.value.findIndex(course => course.id === id);
-      if (item !== -1) {
-        colleges.value.splice(item, 1);
+      const index = colleges.value.findIndex(course => course.id === id);
+      if (index !== -1) {
+        colleges.value.splice(index, 1);
       }
+    })
+    .catch(error => {
+      console.error(error);
     });
 };
 
-    const getCourses = () => {
-            axios.get('http://127.0.0.1:8000/api/colleges')
-              .then(response => {
-                
-                colleges.value = colleges.value.concat(response.data.data);
-              });
-          };
+   
           
         onMounted(getCourses);
      
       return{
         colleges,
-        storeColleges,
+       
         form,
         selectedCourse,
         cancelCourse,
@@ -125,7 +102,15 @@ import axios from "axios";
 <form class="space-y-6" >
         <div class="space-y-4 rounded-md shadow-sm">
           
-          
+          <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Id</label>
+                <div class="mt-1">
+                    <input type="text" name="id" id="id" placeholder="Enter Course Id"
+                           class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                           v-model="form.id">
+                </div>
+            </div>
+
           <div>
                 <label for="name" class="block text-sm font-medium text-gray-700">Course Name</label>
                 <div class="mt-1">
@@ -152,20 +137,20 @@ import axios from "axios";
                 </div>
             </div>
             <div class="mr-2 inline-flex justify-around  px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
-            <button type="submit"
+            <!-- <button type="submit"
                 class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase bg-gray-800 rounded-md border border-transparent ring-gray-300 transition duration-150 ease-in-out hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring disabled:opacity-25">
             Edit
-        </button>
+        </button> -->
     
         <button type="submit" @click="deleteCourse(form.id)"
                 class="inline-flex items-center  px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase bg-gray-800 rounded-md border border-transparent ring-gray-300 transition duration-150 ease-in-out hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring disabled:opacity-25">
             Remove
         </button>
       
-        <button type="submit" @click="cancelCourse"
+        <!-- <button type="submit" @click="cancelCourse"
                 class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase bg-gray-800 rounded-md border border-transparent ring-gray-300 transition duration-150 ease-in-out hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring disabled:opacity-25">
             Cancel
-        </button>
+        </button> -->
       </div>
         </div>
     </form>
