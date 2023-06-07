@@ -24,6 +24,7 @@ class CollegeRequest extends FormRequest
     public function rules()
     {
         return [
+            
             'name'=> ['nullable', 'string'],
             'tutor_name' => ['nullable', 'string'],
             'hours_total'=> ['nullable', 'integer'],

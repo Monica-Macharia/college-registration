@@ -10,7 +10,7 @@ import axios from "axios";
       // const {colleges, getCourses } = useColleges()
       const colleges = ref([])
       const form = reactive({
-       
+            'id': '',
             'name': '',
             'tutor_name': '',
             'hours_total': '',
@@ -43,24 +43,9 @@ import axios from "axios";
             form.hours_total = "";
         };
 
-        //delete course
-        // const deleteCourse = async (id) =>{
-        //     await axios.delete(`http://127.0.0.1:8000/api/colleges/${id}`)
-        // }
-        // const destroyCourse = async (id)=>{
-        //   await deleteCourse(id);
-          
-        // }
+       
 
-//     const deleteCourse = (id) => {
-//     axios.delete(`http://localhost:8000/api/colleges/${id}`)
-//     .then(response => {
-//       const item = colleges.value.findIndex(course => course.id === id);
-//       if (item !== -1) {
-//         colleges.value.splice(item, 1);
-//       }
-//     });
-// };
+
 
 
     const deleteCourse = async (id) => {
@@ -76,13 +61,35 @@ import axios from "axios";
     });
 };
 
+const editCourse = async (form) => {
+  
+      try {
+        const response = await axios.put(`http://localhost:8000/api/colleges/${form.id}`, form);
+        const updatedCourse = response.data;
+
+        const index = colleges.value.findIndex((course) => course.id === updatedCourse.id);
+
+        if (index !== -1) {
+          colleges.value.splice(index, 1, updatedCourse);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+
+        const handleEdit = async () => {
+          
+        editCourse(form);
+      };
+
    
           
         onMounted(getCourses);
      
       return{
         colleges,
-       
+        handleEdit,
         form,
         selectedCourse,
         cancelCourse,
@@ -99,7 +106,7 @@ import axios from "axios";
 
 <template>
 
-<form class="space-y-6" >
+<form class="space-y-6" @submit.prevent="handleEdit">
         <div class="space-y-4 rounded-md shadow-sm">
           
           <div>
@@ -136,23 +143,25 @@ import axios from "axios";
                            v-model="form.hours_total">
                 </div>
             </div>
-            <div class="mr-2 inline-flex justify-around  px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
-            <!-- <button type="submit"
+            <button type="submit"
                 class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase bg-gray-800 rounded-md border border-transparent ring-gray-300 transition duration-150 ease-in-out hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring disabled:opacity-25">
             Edit
-        </button> -->
+        </button>
+      </div>
+            <div class="mr-2 inline-flex justify-around  px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
+            
     
         <button type="submit" @click="deleteCourse(form.id)"
                 class="inline-flex items-center  px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase bg-gray-800 rounded-md border border-transparent ring-gray-300 transition duration-150 ease-in-out hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring disabled:opacity-25">
             Remove
         </button>
       
-        <!-- <button type="submit" @click="cancelCourse"
+        <button type="submit" @click="cancelCourse"
                 class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase bg-gray-800 rounded-md border border-transparent ring-gray-300 transition duration-150 ease-in-out hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring disabled:opacity-25">
             Cancel
-        </button> -->
+        </button>
       </div>
-        </div>
+       
     </form>
 
 
