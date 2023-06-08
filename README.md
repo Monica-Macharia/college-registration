@@ -2,6 +2,14 @@
 
 This is a project built using Laravel 8 and Vue 3. It showcases the integration of a backend API powered by Laravel and a frontend UI built with Vue.js.
 
+## Login Page
+![Alt Text](college/public/login.png)
+
+## Register Page
+![Alt Text](college/public/main.png)
+
+## Main Page
+![Alt Text](college/public/register.png)
 ## Getting Started
 
 Follow the steps below to set up the project on your local machine.
