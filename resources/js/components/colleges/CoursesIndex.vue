@@ -145,7 +145,7 @@ import axios from "axios";
         
       </div>
       
-      <table class="min-w-full border divide-y divide-gray-200">
+      <table v-cloak class="min-w-full border divide-y divide-gray-200">
           <thead>
          
           <tr>
@@ -200,6 +200,13 @@ import axios from "axios";
       </table>
   </div>
 </template>
+<style>
 
+[v-cloak] {
+  display: none;
+}
+
+
+</style>
 
               
