@@ -3,13 +3,17 @@
 This is a project built using Laravel 8 and Vue 3. It showcases the integration of a backend API powered by Laravel and a frontend UI built with Vue.js.
 
 ## Login Page
-![Alt Text](college/public/login.png)
+![Alt ![login](https://github.com/Monica-Macharia/college-registration/assets/106350290/431ba04a-8e25-4e84-8368-a499cb2a525b)
+
 
 ## Register Page
-![Alt Text](college/public/main.png)
+![main](https://github.com/Monica-Macharia/college-registration/assets/106350290/ef8cd922-b2bc-4e0f-9519-982c210066fe)
+
 
 ## Main Page
-![Alt Text](/home/macharia/Development/Code/php-laravel/college-register/college/public/register.png)
+![register](https://github.com/Monica-Macharia/college-registration/assets/106350290/3e171070-0def-41c1-a9af-3629b3ad6903)
+
+
 ## Getting Started
 
 Follow the steps below to set up the project on your local machine.
@@ -23,10 +27,7 @@ Follow the steps below to set up the project on your local machine.
 
 ### Backend Setup
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/project.git
+1. Fork and Clone the repository:
     cd project
     php artisan serve
     npm run dev
