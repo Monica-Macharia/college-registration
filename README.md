@@ -9,7 +9,7 @@ This is a project built using Laravel 8 and Vue 3. It showcases the integration 
 ![Alt Text](college/public/main.png)
 
 ## Main Page
-![Alt Text](college/public/register.png)
+![Alt Text](/home/macharia/Development/Code/php-laravel/college-register/college/public/register.png)
 ## Getting Started
 
 Follow the steps below to set up the project on your local machine.
