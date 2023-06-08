@@ -25036,13 +25036,14 @@ __webpack_require__.r(__webpack_exports__);
       axios__WEBPACK_IMPORTED_MODULE_2___default().post('http://localhost:8000/api/colleges', data).then(function (response) {
         var addedCourse = response.data;
         colleges.value.push(addedCourse);
-        getCourses();
       })["catch"](function (error) {
         console.error(error);
       });
     };
     var handleFormSubmit = function handleFormSubmit() {
       storeColleges(form);
+      getCourses();
+      window.location.reload();
     };
 
     // const storeColleges = async (data) => {

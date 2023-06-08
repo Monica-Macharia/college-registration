@@ -23,7 +23,7 @@ import axios from "axios";
           .then(response => {
             const addedCourse = response.data;
             colleges.value.push(addedCourse);
-            getCourses();
+            
           })
           .catch(error => {
             console.error(error);
@@ -32,6 +32,8 @@ import axios from "axios";
      
       const handleFormSubmit = () => {
       storeColleges(form);
+      getCourses();
+      window.location.reload();
     };
 
       // const storeColleges = async (data) => {
