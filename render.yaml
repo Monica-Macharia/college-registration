@@ -1,0 +1,3 @@
+app_name: College Register
+build_command: php artisan build
+start_command: php artisan serve

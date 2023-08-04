@@ -60,9 +60,9 @@ import axios from "axios";
     .catch(error => {
       console.error(error);
     });
-};
+  };
 
-const editCourse = async (form) => {
+  const editCourse = async (form) => {
   
       try {
         const response = await axios.put(`http://localhost:8000/api/colleges/${form.id}`, form);
